@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&family=Roboto:wght@100;500&display=swap');
+  /* colores
+    #98804B
+    rgb (152,128,75,0.53)
+    #EAEAEA
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.glass{
+    backdrop-filter: blur(10px);
+    background-color: rgba(167, 140, 83, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+.header .header__logo-container{
+    margin: 15px;
+    overflow: hidden;
+}
+
+.header .header__logo{
+    height: 30px;
+}
+
+.header__menu{
+    margin: 20px;
+}
+
+.home .main-section {
+    display: grid;
+    height: 287px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/maceta-mobile.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.home .main-section .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.home .main-section .main-section__link{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+.nosotros-section{
+    display: flex;
+    height: 500px;
+    background-color: #EBE8E8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nosotros-section__h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 60%;
+}
+
+.nosotros-section__h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nosotros-section__img{
+    height: 117px;
+}
+
+.desc-ebanista{
+    display: flex;
+    height: 110px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.desc-ebanista__firma span{
+    font-weight: 600;
+}
+
+.desc-ebanista__link{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.galeria-section{
+    display: flex;
+    align-items: center ;
+    height: 244px;
+    background-image: url("../assets/img/mesa-ratona-lateral.jpeg");
+    background-size: cover;
+}
+
+.galeria-section__link{
+    color: white  ;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 16px;
+}
+
+.testimonios-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 359px;
+    align-items: center;
+    background-color: #EBE8E8
+}
+
+.testimonios-section .card-container{
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .testimonios-card{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    height: 205px;
+    width: 169px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-color: white;
+    padding: 15px;
+} 
+
+.testimonios-card__texto{
+    grid-row: 2/3;
+}   
+
+.testimonios-card__link{
+    grid-row: 3/4;
+    color: black;
+    justify-self: right;
+}
+
+.testimonios-card__firma{
+    grid-row: 4/5;
+    font-size: 12px;
+    font-weight: 700;
+    justify-self: end;
+}
+
+.testimonios-section__link{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contacto-section {
+    display: flex;
+    height: 534px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #bfb1958a;
+}
+
+.heading-container{
+    margin: 10px;
+    width: 80%;
+}
+
+.heading-container__h3{
+    font-size: 15px;
+    font-weight: 600;   
+}
+
+.form{
+    width: 80%;
+}
+
+.form__fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+    height: 250px;
+}
+
+.form__input{
+    height: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form__input--textarea{
+    height: auto;
+}
+
+.data {
+    width: 80%;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.data__img{
+    width: 20px;
+}
+
+.data__img--size{
+    height: 26px;
+
+}
+
+.contacto-section hr{
+    border-top: 1px solid black;
+    border-bottom: none;
+    margin: 2px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 112px;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer__icon-container{
+    display: flex;
+    gap: 25px;
+}
+
+.footer__icon{
+    width: 20px;
+}
+ .footer hr{
+    border-top: none;
+ }
+.footer__text{
+    color: #585858;
+    font-size: 12px;
+    font-weight: 400;
+}
+
