@@ -269,9 +269,32 @@ ul{
 
 .galeria-section__link{
     color: white  ;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 16px;
+}
+
+
+
+/*media queries galeria section*/
+@media screen and (min-width: 576px) {
+    .galeria-section{
+        height: 542px;
+    }
+    
+    .galeria-section__link{
+        font-size: 2rem;
+        margin: 35px
+    }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .galeria-section{
+        height: 763px;
+    }
 }
 
 .testimonios-section{
