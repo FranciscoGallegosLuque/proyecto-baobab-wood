@@ -48,7 +48,6 @@ ul{
     display: flex;
     height: 48px;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     
 }
@@ -61,7 +60,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
+    /* width: 48px; */
     padding: 10px;
 }
 
@@ -156,6 +155,7 @@ ul{
     .main-section__heading{
         font-size: 3rem;
     }
+
 @media screen and (min-width:1024px) {
     .main-section{
         height: 763px;
@@ -315,7 +315,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    width: 100%;
 }
 
 .card-container{
@@ -373,7 +373,7 @@ ul{
 
 
 
-/*media queries testimonios section*/
+/*mq mobile testimonios section*/
 @media screen and (min-width:576px) {
     .testimonios-section{
         height: 522px;
@@ -389,7 +389,10 @@ ul{
     .testimonios-card h3{
         font-size: 1.5rem;
     }
-}
+
+    .cards-container{
+        width: 550px;
+    }
     .card-container--2{
         display: flex;
         gap: 15px;
@@ -402,26 +405,27 @@ ul{
         display: none;
     }
 
-   
-
-@media screen and (min-width:1024px){
+}
+    
+    /*mq desktop testimonios section*/
+@media screen and (min-width:1200px){
     .testimonios-section{
         height: 735px;
     }
     
     .cards-container{
-        width: 1200px;
+        width: 1150px;
     }
     .testimonios-card{
-        height: 444px;
-        width: 366px;
+        height: 406px;
+        width: 335px;
         padding: 30px;
     }
 
     .testimonios-card p, 
     .testimonios-card a, 
     .testimonios-card h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .card-container--3{
@@ -460,7 +464,7 @@ ul{
 }
 
 .heading-container__h3{
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;   
 }
 
@@ -488,12 +492,25 @@ ul{
 .form__input--textarea{
     height: auto;
 }
+.data-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+
+    
+}
 
 .data {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center; 
     gap: 10px;
+}
+
+.data__text{
+    width: 100%;
 }
 
 .data__img{
@@ -509,6 +526,52 @@ ul{
     border-top: 1px solid black;
     border-bottom: none;
     margin: 2px;
+}
+
+
+
+
+/*mq tablet contacto section*/
+@media screen and (min-width:576px) {
+    .heading-container__h3{
+        font-size: 2rem;
+        font-weight: 600;   
+    }
+    .form__input{
+        font-size: 1.5rem;
+    }
+    .data{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contacto-section{
+        display: grid;
+        grid-template-columns: 100px repeat(4,1fr) 100px;
+        grid-template-rows: 50px repeat(6,1fr) 50px;
+    }
+
+    .form{
+        grid-column: 2/4;
+        grid-row: 2/8;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .heading-container{
+        grid-column: 4/6 ;
+        grid-row: 3/4;
+        margin: 0px;
+    }
+
+    .data-container{
+        grid-column: 4/6;
+        grid-row: 4/6;
+        align-self: center;
+        justify-self: start;
+    }
+
 }
 
 .footer{
