@@ -231,6 +231,7 @@ ul{
     .nosotros-section__h2{
         font-size: 3rem;
         width: 100%;
+        margin-top: 30px;
     }
 
     .nosotros-section__h3{
@@ -253,6 +254,7 @@ ul{
 
     .desc-ebanista__link{
         font-size: 2rem;
+        margin-bottom: 30px;
     }
     
 }
@@ -297,6 +299,9 @@ ul{
     }
 }
 
+
+
+
 .testimonios-section{
     display: flex;
     flex-direction: column;
@@ -306,13 +311,29 @@ ul{
     background-color: #EBE8E8
 }
 
-.testimonios-section .card-container{
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+}
+
+.card-container{
     display: flex;
     gap: 15px;
     width: 80%;
     align-items: center;
     justify-content: center;
 }
+
+.card-container--2{
+    display: none;
+}
+
+.card-container--3{
+    display: none;
+}
+
 
  .testimonios-card{
     display: grid;
@@ -349,6 +370,80 @@ ul{
     font-size: 15px;
     font-weight: 600;
 }
+
+
+
+/*media queries testimonios section*/
+@media screen and (min-width:576px) {
+    .testimonios-section{
+        height: 522px;
+    }
+
+    .testimonios-card{
+        height: 279px;
+        width: 230px;
+    }
+
+    .testimonios-card p, 
+    .testimonios-card a, 
+    .testimonios-card h3{
+        font-size: 1.5rem;
+    }
+}
+    .card-container--2{
+        display: flex;
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container__flechader{
+        display: none;
+    }
+
+   
+
+@media screen and (min-width:1024px){
+    .testimonios-section{
+        height: 735px;
+    }
+    
+    .cards-container{
+        width: 1200px;
+    }
+    .testimonios-card{
+        height: 444px;
+        width: 366px;
+        padding: 30px;
+    }
+
+    .testimonios-card p, 
+    .testimonios-card a, 
+    .testimonios-card h3{
+        font-size: 2rem;
+    }
+
+    .card-container--3{
+        display: flex;
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card-container--2__flechader{
+        display: none;
+    }
+
+    .testimonios-section__link{
+        font-size: 2rem;
+    }
+}
+    
+
+
+
 
 .contacto-section {
     display: flex;
