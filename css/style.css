@@ -31,10 +31,13 @@ ul{
     list-style-type: none;
 }
 
+
+
+
 /* header */
 .glass-header{
-    backdrop-filter: blur(10px);
-    background-color: rgba(167, 140, 83, 0.8);
+    backdrop-filter: blur(20px);
+    background-color: rgba(167, 140, 83, 0.891);
     position: fixed;
     top: 0;
     left: 0;
@@ -50,12 +53,16 @@ ul{
     
 }
 
-/* header-items */
+
+
+
+/* header*/
 .header .header__logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 48px;
+    padding: 10px;
 }
 
 .header .header__logo{
@@ -71,10 +78,22 @@ ul{
     display: none;
 }
 
+
+
+
 /*media queries: header*/
 @media (min-width:768px){
     .header__menu{
         display: none;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        width: 1024px;
     }
     .navbar .container{
         display: flex;
@@ -85,33 +104,36 @@ ul{
     .navbar .list{
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
     .list__item{
         font-size: 1.4rem;
+        margin-right: 20px;
     }
-
-
-
 }
 
-.home .main-section {
+
+
+/*banner*/
+ .main-section {
     display: grid;
     height: 287px;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: repeat(5, 1fr);
-    background-image: url("../assets/img/maceta-mobile.png");
+    background-image: url("../assets/img/maceta.png");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     align-items: center;
     justify-items: center;
+    margin: auto;
+    padding: 0px;
 }
 
 
 
-.home .main-section .main-section__heading{
+.main-section__heading{
     color: white;
     font-weight: 600;
     font-size: 30px;
@@ -119,11 +141,31 @@ ul{
     grid-column: 2/3;
 }
 
-.home .main-section .main-section__link{
+.main-section__link{
     grid-row: 5/6;
     grid-column: 2/3;
 }
 
+
+
+@media screen and (min-width: 576px){
+    /*banner mobile*/
+    .main-section{
+        height: 500px;
+    }
+    .main-section__heading{
+        font-size: 3rem;
+    }
+@media screen and (min-width:1024px) {
+    .main-section{
+        height: 763px;
+    }
+    .main-section__heading{
+        font-size: 4.4rem;
+    }
+}
+
+}
 .nosotros-section{
     display: flex;
     height: 500px;
