@@ -38,7 +38,7 @@ ul{
 .glass-header{
     backdrop-filter: blur(20px);
     background-color: rgba(167, 140, 83, 0.891);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -157,8 +157,9 @@ ul{
     }
 
 @media screen and (min-width:1024px) {
+    /*banner desktop*/
     .main-section{
-        height: 763px;
+        height: 100vh;
     }
     .main-section__heading{
         font-size: 4.4rem;
@@ -295,7 +296,7 @@ ul{
 
 @media screen and (min-width: 1024px) {
     .galeria-section{
-        height: 763px;
+        height: 600px;
     }
 }
 
@@ -410,7 +411,7 @@ ul{
     /*mq desktop testimonios section*/
 @media screen and (min-width:1200px){
     .testimonios-section{
-        height: 735px;
+        height: 650px;
     }
     
     .cards-container{
@@ -549,7 +550,8 @@ ul{
     .contacto-section{
         display: grid;
         grid-template-columns: 100px repeat(4,1fr) 100px;
-        grid-template-rows: 50px repeat(6,1fr) 50px;
+        grid-template-rows: 20px repeat(6,1fr) 20px;
+        height: 500px;
     }
 
     .form{
@@ -558,11 +560,25 @@ ul{
         align-self: center;
         justify-self: center;
     }
+     
+    .form__fieldset{
+        gap: 20px;
+        height: 100%;
+    }
 
+    .form__input{
+        height:40px;
+    }
+
+    .form__input--textarea{
+        height: auto;
+    }
     .heading-container{
         grid-column: 4/6 ;
         grid-row: 3/4;
         margin: 0px;
+        align-self: start;
+        padding-top: 7px ;
     }
 
     .data-container{
@@ -570,10 +586,12 @@ ul{
         grid-row: 4/6;
         align-self: center;
         justify-self: start;
+        gap: 40px   ;
     }
 
 }
 
+/*footer*/
 .footer{
     display: flex;
     flex-direction: column;
@@ -599,5 +617,30 @@ ul{
     color: #585858;
     font-size: 12px;
     font-weight: 400;
+}
+
+/*mq mobile and desktop footer*/
+@media screen and (min-width:760px) {
+    .footer{
+        display: flex;
+        height: 63px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+    .footer__text{
+        order: 1;
+    }
+
+    .footer__icon-container{
+        order: 2;
+    }
+
+    .footer hr{
+        display: none;
+    }
+    
 }
 
