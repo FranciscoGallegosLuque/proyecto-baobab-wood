@@ -7,91 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
     <link rel="icon" href="../assets/img/logo.png">
-    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="galeria">
     <div>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="" hr></a>
-            </div>
-            <nav>
-                <ul class="navPages">
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./testimonios.html">Testimonios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>  
-        <section>
-            <div>
-                <h1>Galería</h1>
-                <img src="../assets/img/flecha-abajo.png" alt="">
-            </div>
+        <div class="glass-header">
+            <header class="header">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <a href="../index.html" class="header__logo-container"><img src="../assets/img/logo.png" alt="" class="header__logo"></a>
+                    <!-- hamburguer-menu -->
+                    <img src="../assets/img/hamb.png" alt="" class="header__menu">
+                    <div class="container">
+                        <ul class="list">
+                            <li><a href="../pages/nosotros.html" class="list__item">Nosotros</a></li>
+                            <li><a href="../pages/galeria.html" class="list__item">Galería</a></li>
+                            <li><a href="../pages/testimonios.html" class="list__item">Testimonios</a></li>
+                            <li><a href="../pages/contacto.html" class="list__item">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+             </header>
+        </div>
+        <section class="main-section">
+                <h1 class="main-section__heading">Galería</h1>
+                <a href="#galeria-section" class="main-section__link"><img src="../assets/img/flecha-abajo.png" alt=""></a>
         </section>   
-        <section>
-            <div>
+        <section class="galeria-section" id="galeria-section">
+            <div class="title-container">
                 <h2>Galería de imágenes</h2>
                 <h3>Un vistazo a nuestros trabajos</h3>
             </div>
-            <div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-ratona-lateral.jpeg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/reloj-cocina.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/almohada-cama.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/estante-cocina.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/muelbe-banio.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/perchero.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-con-hojas.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mueble-television.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-de-luz.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-ratona-arriba.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-ratona-esquina.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/estante-libros.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/hamaca.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesa-alta.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a href=""><img src="../assets/img/mesas-de-luz.jpg" alt=""></a>
-                </div>
-
+            <div class="galeria-container">
+                    <img src="../assets/img/mesa-ratona-lateral.jpeg" alt="">
+                    <img src="../assets/img/reloj-cocina.jpg" alt="">
+                    <img src="../assets/img/almohada-cama.jpg" alt="">
+                    <img src="../assets/img/estante-cocina.jpg" alt="">
+                    <img src="../assets/img/muelbe-banio.jpg" alt="">
+                    <img src="../assets/img/perchero.jpg" alt="">
+                    <img src="../assets/img/mesa-con-hojas.jpg" alt="">
+                    <img src="../assets/img/mueble-television.jpg" alt="">
+                    <img src="../assets/img/mesa-de-luz.jpg" alt="">
+                    <img src="../assets/img/mesa-ratona-arriba.jpg" alt="">
+                    <img src="../assets/img/mesa-ratona-esquina.jpg" alt="">
+                    <img src="../assets/img/estante-libros.jpg" alt="">
+                    <img src="../assets/img/hamaca.jpg" alt="">
+                    <img src="../assets/img/mesa-alta.jpg" alt="">
+                    <img src="../assets/img/mesas-de-luz.jpg" alt="">
             </div>
-        </section>
-        <footer>
-            <div>
-                <p>@ 2022 Baobab Wood & Deco. Todos los derechos reservados</p>
+        </section> 
+        <footer class="footer">
+            <div class="footer__icon-container">
+                <a href="https://www.instagram.com/" target="_blank""><img src="../assets/img/instagram-icon.png" alt="""  class="footer__icon"></a>
+                <a href="https://www.facebook.com/" target="_blank""><img src="../assets/img/facebook-icon.png" alt=""  class="footer__icon"></a>
+                <a href="https://ar.pinterest.com/" target="_blank""><img src="../assets/img/pinterest-icon.png" alt=""  class="footer__icon"></a>
             </div>
+            <hr>
             <div>
-                <a href=""><img src="./assets/img/instagram-icon.png" alt=""></a>
-                <a href=""><img src="./assets/img/facebook-icon.png" alt=""></a>
-                <a href=""><img src="./assets/img/pinterest-icon.png" alt=""></a>
+                <p class="footer__text">@ 2022 Baobab Wood & Deco. Todos los derechos reservados</p>
             </div>
         </footer>
     </div>

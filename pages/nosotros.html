@@ -7,74 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="icon" href="../assets/img/logo.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="nosotros">
     <div>
-        <header>
-            <div class="logoContainer">
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo baobab wood&deco" hr></a>
-            </div>
-            <nav>
-                <ul class="navPages">
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./testimonios.html">Testimonios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="glass-header">
+            <header class="header">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <a href="../index.html" class="header__logo-container"><img src="../assets/img/logo.png" alt="" class="header__logo"></a>
+                    <!-- hamburguer-menu -->
+                    <img src="../assets/img/hamb.png" alt="" class="header__menu">
+                    <div class="container">
+                        <ul class="list">
+                            <li><a href="../pages/nosotros.html" class="list__item">Nosotros</a></li>
+                            <li><a href="../pages/galeria.html" class="list__item">Galería</a></li>
+                            <li><a href="../pages/testimonios.html" class="list__item">Testimonios</a></li>
+                            <li><a href="../pages/contacto.html" class="list__item">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+             </header>
+        </div>
         <main>
-            <section class="mainSection">
-                <div class="tituloPrincipal">
-                    <h1>Nosotros</h1>
+            <section class="main-section">
+                <h2 class="main-section__heading">Nosotros</h2>
+                <a href="#nosotros-section" class="main-section__link"><img src="../assets/img/flecha-abajo.png" alt=""></a>
+        </section>
+            <section class="nosotros-section" id="nosotros-section">
+                <div class="title-container">
+                    <h2 class="nosotros-section__h2">Sobre nosotros</h2>
+                    <h3 class="nosotros-section__h3">Conocé nuestra historia</h3>
                 </div>
-                <div class="flechaAbajo">
-                    <a href="#section2Nosotros"><img src="../assets/img/flecha-abajo.png" alt=""></a>
-                </div>
-            </section>
-            <section class="section2Nosotros" id="section2Nosotros">
-                <div class="titleContainer">
-                    <h2>Sobre nosotros</h2>
-                    <h3>Conocé nuestra historia</h3>
-                </div>
-                <div class="textContainer">
+                <div class="text-container">
                     <p>
-                        Mi nombre es Santiago Gallegos Luque, 
-                        ebanista profesional de 
-                        Buenos Aires desde 2015. 
-                        Soy artesano en madera y realizo 
+                        Mi nombre es Santiago Gallegos Luque,
+                        ebanista profesional de
+                        Buenos Aires desde 2015.
+                        Soy artesano en madera y realizo
                         muebles a medida de todo tipo.
                     </p>
                     <p>
-                        En 2010, cuando tenía 15 años, encontré un antiguo libro rural 
-                        llamado "Trenzas Gauchas". Los intrincados patrones y diseños 
+                        En 2010, cuando tenía 15 años, encontré un antiguo libro rural
+                        llamado "Trenzas Gauchas". Los intrincados patrones y diseños
                         hechos con cueros me cautivaron, y nació mi amor por las manualidades.
                     </p>
                     <p>
-                        El tiempo pasó, y despues de muchos cinturones, vainas y 
-                        trenzas cuero, llegó la hora de tener un cajón donde guardar 
+                        El tiempo pasó, y despues de muchos cinturones, vainas y
+                        trenzas cuero, llegó la hora de tener un cajón donde guardar
                         todo mi material de talabartería.
                     </p>
                     <p>
-                        Fue entonces cuando hice mi primer mueble de madera: un 
-                        simple cajón para poder tener mis herramientas. Desde 
-                        entonces, supe que la madera era lo que realmente me 
+                        Fue entonces cuando hice mi primer mueble de madera: un
+                        simple cajón para poder tener mis herramientas. Desde
+                        entonces, supe que la madera era lo que realmente me
                         cautivaba, y aprendí a trabajarla.
                     </p>
                     <p>
-                        Después de años de aprendizaje y 
-                        de incontables mesas y muebles de todo tipo, decidí dedicarme 
-                        de manera profesional al trabajo con la madera. 
+                        Después de años de aprendizaje y
+                        de incontables mesas y muebles de todo tipo, decidí dedicarme
+                        de manera profesional al trabajo con la madera.
                     </p>
                     <p>
-                        Así nació Baobab Wood & Deco en 2015, un intento de plasmar mi amor y 
-                        conocimiento de la madera en piezas únicas. En el taller, el arte 
-                        y la ciencia se combinan para dar lugar a creaciones inéditas. 
+                        Así nació Baobab Wood & Deco en 2015, un intento de plasmar mi amor y
+                        conocimiento de la madera en piezas únicas. En el taller, el arte
+                        y la ciencia se combinan para dar lugar a creaciones inéditas.
                     </p>
                 </div>
             </section>
-            <section class="section3Nosotros">
+            <section class="nosotros-data">
                     <div>
                         <h2>104</h2>
                         <p>muebles</p>
@@ -89,14 +90,15 @@
                     </div>
             </section>
         </main>
-        <footer>
-            <div class="textContainer">
-                <p>@ 2022 Baobab Wood & Deco. Todos los derechos reservados</p>
+        <footer class="footer">
+            <div class="footer__icon-container">
+                <a href="https://www.instagram.com/" target="_blank""><img src="../assets/img/instagram-icon.png" alt="""  class="footer__icon"></a>
+                <a href="https://www.facebook.com/" target="_blank""><img src="../assets/img/facebook-icon.png" alt=""  class="footer__icon"></a>
+                <a href="https://ar.pinterest.com/" target="_blank""><img src="../assets/img/pinterest-icon.png" alt=""  class="footer__icon"></a>
             </div>
-            <div class="logosContainer">
-                <a href="https://www.instagram.com/"><img src="../assets/img/instagram-icon.png" alt="instagram icon"></a>
-                <a href="https://www.facebook.com/"><img src="../assets/img/facebook-icon.png" alt="facebook icon"></a>
-                <a href="https://ar.pinterest.com/"><img src="../assets/img/pinterest-icon.png" alt="pinterest icon"></a>
+            <hr>
+            <div>
+                <p class="footer__text">@ 2022 Baobab Wood & Deco. Todos los derechos reservados</p>
             </div>
         </footer>
     </div>

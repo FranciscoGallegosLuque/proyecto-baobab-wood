@@ -262,7 +262,7 @@ ul{
 
 
 
-.galeria-section{
+.home .galeria-section{
     display: flex;
     align-items: center ;
     height: 244px;
@@ -644,3 +644,247 @@ ul{
     
 }
 
+.nosotros .main-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/ebanista-taller.jpeg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+
+
+.nosotros .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: end;
+
+}
+
+.nosotros .main-section__link{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+@media screen and (min-width: 576px){
+    /*banner mobile*/
+    .nosotros .main-section{
+        height: 500px;
+    }
+    .nosotros .main-section__heading{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /*banner desktop*/
+    .nosotros .main-section{
+        height: 100vh;
+    }
+    .nosotros .main-section__heading{
+        font-size: 4.4rem;
+    }
+}
+
+/*section nosotros*/
+.nosotros .nosotros-section{
+    display: flex;
+    background-color: #EBE8E8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* padding: 20px; */
+}
+
+.nosotros .title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nosotros .nosotros-section__h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    
+}
+
+.nosotros .nosotros-section__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nosotros .text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 0px 20px;
+
+    
+}
+
+@media screen and  (min-width: 576px){
+
+    .nosotros .title-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nosotros .nosotros-section {
+        height: 700px;
+    }
+    .nosotros .nosotros-section__h2{
+        font-size: 3rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nosotros .nosotros-section__h3{
+        font-size: 2rem;
+    }
+
+    .nosotros .nosotros-section .text-container{
+        width: 500px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and  (min-width: 1024px){
+
+    .nosotros .nosotros-section {
+        height: 750px;
+    }
+    .nosotros .nosotros-section__h2{
+        font-size: 4.4rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nosotros .nosotros-section__h3{
+        font-size: 3rem;
+    }
+
+    .nosotros .nosotros-section .text-container{
+        width: 500px;
+        font-size: 1.5rem;
+    }
+}
+   
+   
+
+.nosotros-data{
+    display: flex;
+    height: 266px;
+    background-color: #D9D9D9;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 576px){
+    .nosotros-data{
+        display: flex;
+        flex-direction: row ;
+        height: 150px;
+    }
+
+    .nosotros-data h2{
+        font-size: 3rem;
+    }
+
+    .nosotros-data p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nosotros-data{
+        display: flex;
+        flex-direction: row ;
+        height: 210px;
+    }
+
+    .nosotros-data h2{
+        font-size: 4rem;
+    }
+
+    .nosotros-data p{
+        font-size: 3rem;
+    }
+}
+
+.galeria .main-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/mesa-ratona-esquina.jpg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+.galeria .galeria-section{
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.galeria .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    
+}
+
+.galeria .title-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.galeria .title-container h3{
+    font-weight: 400;
+}
+
+.galeria-container {
+    display: grid;
+    width: 300px;
+    height: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,100px) ;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.galeria .galeria-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+} 
