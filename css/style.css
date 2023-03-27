@@ -295,11 +295,10 @@ ul{
 
 
 @media screen and (min-width: 1024px) {
-    .galeria-section{
+    .home .galeria-section{
         height: 600px;
     }
 }
-
 
 
 
