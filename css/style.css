@@ -31,11 +31,23 @@ ul{
     list-style-type: none;
 }
 
+.bg{
+    background-color: rgba(167, 140, 83, 0.891);
+
+}
+
+/* .navbar{
+    padding: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+} */
 
 
 
 /* header */
-.glass-header{
+ .glass-header{
     backdrop-filter: blur(20px);
     background-color: rgba(167, 140, 83, 0.891);
     position: sticky;
@@ -44,7 +56,7 @@ ul{
     right: 0;
 }
 
-.navbar{
+.css-navbar{
     display: flex;
     height: 48px;
     flex-direction: row;
@@ -55,25 +67,26 @@ ul{
 
 
 
+
+
 /* header*/
-.header .header__logo-container{
+.css-header .css-header__logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 48px; */
     padding: 10px;
 }
 
-.header .header__logo{
+.css-header .css-header__logo{
     height: 30px;
 
 }
 
-.header__menu{
+.css-header__menu{
     margin: 15px;
 }
 
-.navbar .container{
+.css-navbar .header-container{
     display: none;
 }
 
@@ -82,36 +95,36 @@ ul{
 
 /*media queries: header*/
 @media (min-width:768px){
-    .header__menu{
+    .css-header__menu{
         display: none;
     }
     
-    .header{
+    .css-header{
         display: flex;
         justify-content: center;
     }
 
-    .navbar{
+    .css-navbar{
         width: 1024px;
     }
-    .navbar .container{
+    .css-navbar .header-container{
         display: flex;
         justify-content: right;
         width: 500px;
     }
 
-    .navbar .list{
+    .css-navbar .css-list{
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
 
-    .list__item{
+    .css-list__item{
         font-size: 1.4rem;
         margin-right: 20px;
     }
-}
+} 
 
 
 
@@ -907,14 +920,14 @@ ul{
     background-size: cover;
 }
 
-.contacto .text-container{
+.contacto .texto-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 1.5rem;
 }
 
-.contacto .text-container p{
+.contacto .texto-container p{
     width: 80%;
     
 }
@@ -945,7 +958,13 @@ ul{
     height: auto;
 }
 
-.contacto .contacto-cards{
+.contacto .contacto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto .contacto-container{
     height: 487px;
     background-color: #F1F1F1;
     display: flex;
@@ -961,31 +980,36 @@ ul{
     height: 400px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
-.contacto .card{
+.contacto .contacto-card{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
+    align-self: center;
+    justify-self: center;
     width: 115px;
     height: 115px;
     background-color: white;
     border-radius: 10px;
 }
 
-.card .card-text-container{
+.contacto-card .card-text-container{
     width: 80%;
     overflow-wrap: break-word;
-    margin: 10px;
+    /* gap: 5px;
+    margin: 5px; */
     
 }
 
-.card .card-text-container h2 {
+.contacto-card .card-text-container h2 {
     font-size: 1rem;
 }
 
-.card .card-text-container p {
+.contacto-card .card-text-container p {
     font-size: 1rem;
 }
 
